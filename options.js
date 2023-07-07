@@ -10,7 +10,7 @@ input.onchange = async (e) => {
       "load",
       () => {
         chrome.storage.local.set({
-          [index++]: reader.result
+          [total + index++]: reader.result
         })
         document.querySelector("html").style.backgroundImage = `url(${reader.result})`
       },
