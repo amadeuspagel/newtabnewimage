@@ -3,8 +3,9 @@
   "version": "0.1",
   "name": "new tab, new image",
   "chrome_url_overrides": {
-    "newtab": "index.html"
+    "newtab": "newtab.html"
   },
+  "options_page": "options.html",
   "permissions": [
     "storage",
     "unlimitedStorage"

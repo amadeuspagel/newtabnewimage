@@ -1,18 +1,10 @@
 const { total = 0 } = await chrome.storage.local.get("total")
 
-if (total) {
-  const random = Math.floor(Math.random() * total)
-  const image = await chrome.storage.local.get(String(random)).then(res => res[random])
-  document.body.style.backgroundImage = `url(${image})`
-}
-
 const input = document.querySelector("input")
 
 input.onchange = async (e) => {
   let index = 0
   for (const file of input.files) {
-
-
     const reader = new FileReader();
     reader.addEventListener(
       "load",
@@ -30,3 +22,4 @@ input.onchange = async (e) => {
 
   chrome.storage.local.set({ total: total + input.files.length })
 }
+
