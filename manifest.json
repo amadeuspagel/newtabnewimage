@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "version": "0.1",
+  "name": "new tab, new image",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permissions": [
+    "storage",
+    "unlimitedStorage"
+  ],
+  "icons": {
+    "128": "icon128.png",
+    "256": "icon256.png"
+  }
+}
