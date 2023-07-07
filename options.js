@@ -22,4 +22,3 @@ input.onchange = async (e) => {
 
   chrome.storage.local.set({ total: total + input.files.length })
 }
-
