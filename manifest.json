@@ -6,12 +6,13 @@
     "newtab": "newtab.html"
   },
   "options_page": "options.html",
-  "permissions": [
-    "storage",
-    "unlimitedStorage"
-  ],
+  "permissions": ["storage", "unlimitedStorage", "contextMenus"],
+  "host_permissions": ["<all_urls>"],
   "icons": {
     "128": "icon128.png",
     "256": "icon256.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   }
 }

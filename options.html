@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>New Tab</title>
+    <title>New Tab Image Settings</title>
     <link rel="stylesheet" href="./style.css" />
   </head>
-
-  <input type="file" accept="image" multiple />
-
-  <script src="./options.js" type="module"></script>
+  <body>
+    <h1>New Tab Image Settings</h1>
+    <p>
+      Upload images or use the context menu on any web image to add backgrounds:
+    </p>
+    <input type="file" accept="image/*" multiple />
+    <div id="imageList"></div>
+    <script src="./options.js" type="module"></script>
+  </body>
 </html>
